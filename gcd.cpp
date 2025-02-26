@@ -41,7 +41,7 @@ public:
             // lengths must be divisibile..
             if ( ls->length() % prefix.length() == 0 ) 
             { 
-                cout << prefix << " is a candidate." << endl;
+                // cout << prefix << " is a candidate." << endl;
                 if (checkGcd(prefix, ls)) { return prefix; };
             } else{
                 // cout << "SKIP!" << ls->length() << "NOT DIVIS BY " << prefix.length() << endl;
@@ -57,19 +57,15 @@ public:
 
 int main()
 {
-    cout << "running.." << endl;
-
     Solution my_s;
     
-    assert(my_s.gcdOfStrings("TAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXX", "TAUXXTAUXXTAUXX") == "ABCABC");
     assert(my_s.gcdOfStrings("ABCABCABCABC", "ABCABC") == "ABCABC");
-    cout<<"Passsed test 1/2"<<endl;
+    cout<<"Passsed test 1/3"<<endl;
     assert(my_s.gcdOfStrings("ABCABCD", "ABCABC") == "");
-    cout<<"Passsed test 2/2"<<endl;
+    cout<<"Passsed test 2/3"<<endl;
+    assert(my_s.gcdOfStrings("TAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXXTAUXX", "TAUXXTAUXXTAUXX") == "TAUXX"); // I fail this test. Why is TAUXXTAUXXTAUXX not correct
+    cout<<"Passsed test 3/3"<<endl;
     
-
-    
-
 }
 
 
