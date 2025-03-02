@@ -6,27 +6,6 @@ using namespace std;
 class Solution {
 public:
     double findMaxAverage(vector<int>& nums, int k) {
-    //     // TODO: Implement your solution
-    //     // double avg = -DBL_MAX;
-    //     double avg = -DBL_MAX;
-    //     double sum = 0;
-    //     ///             3    5
-    //     ///             4    5
-    //     for (int i = 0; i < nums.size(); i++)
-    //     {
-    //         sum += nums[i];
-
-    //         // if i+1>k, we need to subtract the leading window...
-    //         if (i+1 > k) // eg K is 2 and we are at i=2, we have summed 3 elements...
-    //             sum -= nums[i-k]; // remove the (front) end of the window
-            
-    //         // if i+1 >= k, we want to calculate an average. 
-    //         if (i+1 >= k) // If we have K elements in our sum..
-    //             if (sum/k >= avg) { avg=sum/k; }
-    //     }
-        
-    //     return(avg);
-    // }
 
     double max_sum = -DBL_MAX;
     double sum = 0;
